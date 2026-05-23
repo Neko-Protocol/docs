@@ -1,0 +1,39 @@
+---
+title: "Swap"
+description: "Expert-only token exchange with smart routing across available liquidity."
+icon: "arrow-right-arrow-left"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+**Swap** is **Expert** only. Slippage, partial fills, and venue risk are easier to mishandle than **Buy** or vault flows.
+
+Neko queries **CoW Swap** on EVM and **Soroswap**, then routes you to whichever quote is better after fees.
+
+<VideoPlaceholder topic="Swapping tokens in Expert mode" />
+
+{/* VIDEO_PLACEHOLDER: Swapping tokens in Expert mode, 60–90s walkthrough */}
+
+## Everyday flow
+
+<Tabs>
+  <Tab title="Choose sides">
+    Pick tokens in the chooser. Only approve assets you trust. Check ticker and issuer in your wallet preview. Copycats exist.
+  </Tab>
+  <Tab title="Tune execution">
+    Tabs switch between immediate-style fills and auction-style flow when the connector exposes both.
+
+    **Slippage** is how far the executed price may move versus the preview. Adjust the cap if you need tighter fills.
+  </Tab>
+  <Tab title="Review warnings">
+    Large impact or odd previews are worth stopping. Compare with other screens before you sign.
+  </Tab>
+</Tabs>
+
+## How previews stay aligned
+
+Quotes can differ briefly across chains. The app warns when a preview looks far from other pages.
+
+<Tip>For large trades, compare preview totals with another source before you confirm.</Tip>
+
+<Note>**Swap** stays out of **Simple mode** so newer users stick to **Buy**, **Cart**, and vault flows.</Note>

@@ -1,0 +1,30 @@
+---
+title: "Discover (Expert)"
+description: "Inspect oracle pricing, programmable strategy parameters, risk ratios, liquidation buffers, contract references, and compliance flags per asset."
+icon: "telescope"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+Expert **Discover** adds the same catalog as Simple mode, plus price feeds, risk settings, strategy detail, and deployment links.
+
+An **oracle** is a feed that publishes asset prices on-chain. Lending and liquidation use those prices. Bad or stale feeds can skew borrow limits and liquidations.
+
+<VideoPlaceholder topic="Expert Discover: reading oracle prices and strategy parameters" />
+
+{/* VIDEO_PLACEHOLDER: Expert Discover: reading oracle prices and strategy parameters, 60–90s walkthrough */}
+
+## What you see on each asset
+
+- **Pricing** lists feed IDs (**SEP-40** feeds, **Pyth** on many EVM markets, or hybrids when bridged).
+- **Risk** shows max borrow per dollar pledged via **[collateral factor](/concepts/collateral-and-health-factor)** and where **[health](/concepts/collateral-and-health-factor)** can trigger liquidation.
+- **Strategy** lists route weights and planned integrations (**Blend**, **Aquarius**, **Soroswap**, **DeFindex**) as the stack evolves.
+- **Contracts** link to explorers for bytecode review.
+
+<Tip>Use two windows when you compare two issuers side by side.</Tip>
+
+## When price feeds look wrong
+
+Simple mode cards still rely on the same feeds, even when the UI hides IDs.
+
+If a stable asset drifts far from its peg, contact [Support](/support). Borrow engines may misprice risk until feeds recover.
