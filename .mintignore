@@ -5,3 +5,13 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Mintlify starter content (not used by Neko)
+
+essentials/
+agent-ready/
+ai-tools/
+development.mdx
+snippets/snippet-intro.mdx
+upcoming/own-contracts.mdx
+api-reference/

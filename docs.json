@@ -1,91 +1,103 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Neko Protocol",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#294cab",
+    "light": "#7096d1",
+    "dark": "#39bfb7"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "User Guide",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get Started",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "get-started/what-is-neko",
+              "get-started/choose-your-mode",
+              "get-started/wallet-setup"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Tutorials",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "tutorials/install-a-wallet",
+              "tutorials/install-freighter",
+              "tutorials/install-lobstr",
+              "tutorials/buy-usdc"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Basic Mode",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
+              "basic/dashboard",
+              "basic/discover",
+              "basic/buying-assets",
+              "basic/cart"
             ]
           },
           {
-            "group": "Agent ready",
+            "group": "Expert Mode",
             "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "expert/dashboard",
+              "expert/discover",
+              "expert/swap"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/vaults",
+              "features/lending",
+              "features/borrowing",
+              "features/pools",
+              "features/strategies",
+              "features/simulator",
+              "features/ramps",
+              "features/settings"
+            ]
+          },
+          {
+            "group": "Concepts",
+            "pages": [
+              "concepts/rwas",
+              "concepts/yield-and-apy",
+              "concepts/collateral-and-health-factor",
+              "concepts/oracles",
+              "concepts/multichain"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "troubleshooting",
+              "support"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Upcoming",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Roadmap",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "upcoming/overview",
+              "upcoming/issuers-portal",
+              "upcoming/zk-privacy",
+              "upcoming/referrals",
+              "upcoming/governance",
+              "upcoming/mobile-app"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -94,33 +106,32 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/Neko-Protocol/Neko-DApp"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://nekoprotocol.xyz"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Neko-Protocol",
+      "x": "https://x.com/nekoprotocol"
     }
   }
 }
