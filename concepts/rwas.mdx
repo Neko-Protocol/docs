@@ -1,0 +1,39 @@
+---
+title: "Real-world assets"
+description: "Real-world investments explained: what they are, where the earnings come from, and how Neko handles compliance."
+icon: "building-columns"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+## What RWAs are
+
+**Real-world assets (RWAs)** are tokens backed by off-chain income: government bills, rent, invoices, private loans, or similar cash flows with legal documentation.
+
+Their prices tend to track cash flows and macro rates more than short-term social hype.
+
+<VideoPlaceholder topic="What RWAs mean for everyday Neko investors" />
+
+{/* VIDEO_PLACEHOLDER: What RWAs mean for everyday Neko investors, 60–90s walkthrough */}
+
+## Where the yield comes from
+
+Yield comes from real payments (coupon income, rent, loan repayments), not only from trading volume.
+
+Issuers set **identity** rules, redemption timing, and freezes when law requires.
+
+Disclosures live with the issuer and regulators as well as on-chain history.
+
+## How Neko handles compliance
+
+Issuer accounts can set **AUTH_REQUIRED_FLAG**, **AUTH_REVOCABLE_FLAG**, and sometimes **CLAWBACK_ENABLED_FLAG**:
+
+- **`AUTH_REQUIRED_FLAG`**: you finish issuer onboarding before new balances settle.
+- **`AUTH_REVOCABLE_FLAG`**: the issuer can revoke authorization for future moves under their terms.
+- **`CLAWBACK_ENABLED_FLAG`**: the issuer can recall tokens when their rules and law allow.
+
+Trustlines use **`AUTHORIZED_FLAG`**, **`AUTHORIZED_TO_MAINTAIN_LIABILITIES_FLAG`**, or **`UNAUTHORIZED_FLAG`** for whether you may hold or trade the asset.
+
+Many tokens follow **SEP-41** so wallets treat balances like standard tokens while issuer rules still apply.
+
+Neko reflects these flags in copy. Issuer legal docs hold the full terms.

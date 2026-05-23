@@ -1,0 +1,47 @@
+---
+title: "Networks"
+description: "Neko routes through more than one network. Here is how they fit together."
+icon: "link"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+## The primary network
+
+Neko is built around one primary network for low fees and fast finality. Issuance-friendly assets, everyday wallets, and the live mainnet experience all anchor here first.
+
+## Where EVM-compatible networks fit in
+
+For some features, Neko also connects to EVM-compatible networks (for example liquidity connectors used from Expert flows). Those balances and fee currencies are separate from the primary network even when one dashboard sums them.
+
+## What the diagram shows
+
+```mermaid
+flowchart LR
+  subgraph primary["Primary network"]
+    S_Assets[Issuance + asset controls]
+    S_Vaults[Vault integrations]
+    S_Pools[Soroswap pools]
+    S_Lend[Blend overlays planned]
+  end
+  subgraph evm["EVM-compatible networks when used"]
+    E_Lend[Pyth-backed lending venues]
+    E_Swap[CoW + aggregator swaps]
+    E_Liq[Liquidity depth]
+  end
+  User[Neko UI + wallets] --> primary
+  User -.-> evm
+  primary <-->|Bridged equivalents when applicable| evm
+```
+
+Bridged assets add timing and trust rules. Read issuer notes when wraps power a strategy.
+
+## In the app
+
+Keep **XLM** funded in your wallet. If you use EVM connectors from Expert flows, keep each network's gas token funded too.
+
+<Tip>Budget gas on both sides only when you actually use both.</Tip>
+
+<VideoPlaceholder topic="How the primary and EVM networks split inside Neko" />
+
+{/* VIDEO_PLACEHOLDER: How the primary and EVM networks split inside Neko, 60–90s walkthrough */}
