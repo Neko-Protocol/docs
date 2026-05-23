@@ -1,0 +1,24 @@
+export const VideoPlaceholder = ({ topic, duration = "60–90s" }) => (
+  <Frame caption={`Video coming soon. ${topic}`}>
+    <div
+      style={{
+        aspectRatio: "16 / 9",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "0.5rem",
+        background: "linear-gradient(135deg, #0f172a, #1e293b)",
+        color: "#94a3b8",
+        borderRadius: "0.75rem",
+        border: "1px dashed #334155",
+        padding: "2rem",
+      }}
+    >
+      <span style={{ fontSize: "2rem" }}>🎬</span>
+      <strong style={{ color: "#e2e8f0" }}>Video placeholder</strong>
+      <span style={{ fontSize: "0.875rem" }}>{topic}</span>
+      <span style={{ fontSize: "0.75rem", opacity: 0.7 }}>Target length: {duration}</span>
+    </div>
+  </Frame>
+);
