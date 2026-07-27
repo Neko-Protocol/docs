@@ -1,0 +1,41 @@
+---
+title: "Swap"
+description: "Exchange one token for another with routing across available liquidity. Expert mode only."
+icon: "arrow-right-arrow-left"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+**Swap** only appears in **Expert mode** — slippage, partial fills, and venue risk are easier to get wrong here than in a straight [Buy](/app-guide/basic/discover) or [vault](/concepts/vaults) deposit, so Neko keeps newer users on the simpler flows by default.
+
+Neko checks quotes from **Soroswap** and, for EVM-connected pairs, **CoW Swap**, then routes you to whichever is better after fees.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Swapping tokens" />
+
+    {/* VIDEO_PLACEHOLDER: Swapping tokens, 60–90s walkthrough */}
+  </Tab>
+  <Tab title="Read the explanation">
+    ## Reading the Swap screen
+
+    Three modes sit at the top: **Swap** (trade right away at the current rate), **Limit**, and **TWAP** (time-weighted average price, splits a trade over time instead of filling it all at once). Below that:
+
+    - **From / To**: pick the token you're spending and the token you want, with your current balance and a **Max** button under each. Tap the swap icon between them to flip the direction.
+    - **Amount**: enter how much you want to trade, with the USD value shown underneath. The other side's amount updates automatically based on the current quote.
+    - **Platform fee**: the cut Neko takes on the swap, shown as both a percentage and the actual amount in the token you're paying with.
+    - **Slippage tolerance**: the most the price can move against you before the trade fails instead of filling at a worse rate.
+
+    <Frame>
+      <img src="/images/swap/swap.png" alt="Swap screen with From/To fields, platform fee, and slippage tolerance" />
+    </Frame>
+
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Pools & lending" icon="droplets" href="/app-guide/expert/pools-and-lending" />
+  <Card title="Settings" icon="gear" href="/app-guide/expert/settings" />
+</CardGroup>
