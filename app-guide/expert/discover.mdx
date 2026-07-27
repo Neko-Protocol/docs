@@ -1,0 +1,53 @@
+---
+title: "Discover"
+description: "The same catalog as Basic mode, but tapping an asset opens its detail page instead of a Buy Asset or cart flow."
+icon: "telescope"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+**Expert mode** Discover shows the same catalog as Basic mode: the same filters, the same cards, the same price and APY data. The difference shows up when you interact with a card. There's no **Buy Asset** button and no **Shopping Cart**, tapping a card opens that asset's detail page directly.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Browsing and reading assets in Expert mode Discover" />
+  </Tab>
+  <Tab title="Read the explanation">
+    ## Same catalog, no cart
+
+    Filter by category (**All**, **Stablecoins**, **Sovereign Bonds**, **Native**) or search by symbol or name, same as [Basic mode](/app-guide/basic/discover). Each card shows the icon, ticker, name, spot price, APY when the asset earns yield, and a category tag. Tap any card to open its detail page.
+
+    <Frame>
+      <img src="/images/discover/expert-discover-1.png" alt="Expert mode Discover catalog with filters and asset cards" />
+    </Frame>
+
+    ## Asset detail page
+
+    Opening a card takes you to a dedicated page for that asset, with a **Back to Discover** link at the top:
+
+    - **Spot price**: the current price and which feed it comes from (for example "via Reflector").
+    - **Price chart**: switch between 3H, 1D, 3D, and 7D ranges, with a **Live** indicator when the feed is streaming.
+    - **Overview**: a plain-language description of what the asset is and who issues it.
+    - **Details**: further asset-specific data, next to the Overview tab.
+
+    <Frame>
+      <img src="/images/discover/expert-discover-2.png" alt="Asset detail page for CETES with price chart, Swap on Neko, and Buy on Etherfuse buttons" />
+    </Frame>
+
+    ## Buying an asset
+
+    Instead of Basic mode's in-app buying panel, the detail page gives you two options:
+
+    - **Swap on Neko**: trade for the asset right there using Neko's own routing. See [Swap](/app-guide/expert/swap).
+    - **Buy on [Issuer]**: an external link to buy the asset directly from the partner that issues it (for example Etherfuse for CETES).
+
+    <Tip>Returns and prices change constantly, and issuers can update terms. Treat every number as today's estimate, not a locked-in rate.</Tip>
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Real-world assets" icon="building-columns" href="/concepts/rwas" />
+  <Card title="Swap" icon="arrow-right-arrow-left" href="/app-guide/expert/swap" />
+</CardGroup>
