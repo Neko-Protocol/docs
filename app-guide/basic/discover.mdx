@@ -1,0 +1,57 @@
+---
+title: "Discover"
+description: "Browse every real-world asset available on Neko, filter by category, and buy directly from the asset."
+icon: "compass"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+Discover is the catalog of every asset available on Neko: stablecoins, and native network assets, with their current price and market data.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Browsing assets in Discover" />
+  </Tab>
+  <Tab title="Read the explanation">
+    ## Filter and search
+
+    Filter the catalog by category: **All**, **Stablecoins**, **Sovereign Bonds**, or **Native**, each with a count of how many assets are in it. Or use the search bar to find an asset by symbol or name directly. See [Types of RWAs on Neko](/concepts/types-of-rwas) for what's in each category.
+
+    ## Reading an asset
+
+    Each asset shows:
+
+    - **Icon, ticker, and name**: for example CETES, Mexican Treasury Token.
+    - **Price (USD)**: the current price.
+    - **APY**: shown next to the price when the asset earns yield (for example ~5.56% APY). Assets that don't earn yield, like a plain stablecoin, won't show one.
+    - **Category tag**: Sovereign Bond, Yield Stablecoin, Stablecoin, or Native.
+
+    <Frame>
+      <img src="/images/discover/discover-1.png" alt="Discover catalog with filters and asset cards" />
+    </Frame>
+
+    ## Buying an asset
+
+    Every card has two buttons, and they lead to two different flows:
+
+    - **Buy Asset**: opens that asset's detail page, with its price chart, overview, and a buying panel where you pay with **USDC**, enter an amount, and confirm. Don't know how to get USDC? See our [tutorial](/tutorials/buy-usdc).
+
+    <Frame>
+      <img src="/images/discover/discover-2-buy-asset.png" alt="Asset detail page opened from the Buy Asset button" />
+    </Frame>
+
+    - **Shopping Cart**: opens a quick buy panel right there on Discover, no need to leave the page. Pay with **USDC**, enter an amount, and tap **Add to cart** to queue it, then check out later with everything else in your [Cart](/app-guide/basic/cart). Don't know how to get USDC? See our [tutorial](/tutorials/buy-usdc).
+
+    <Frame>
+      <img src="/images/discover/discover-3-shopping.png" alt="Quick add panel opened from the Shopping Cart button" />
+    </Frame>
+
+    <Tip>Returns and prices change constantly, and issuers can update terms. Treat every number as today's estimate, not a locked-in rate.</Tip>
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Real-world assets" icon="building-columns" href="/concepts/rwas" />
+</CardGroup>
