@@ -1,0 +1,65 @@
+---
+title: "Vaults"
+description: "Deposit once, let the vault earn for you. No active management needed."
+icon: "vault"
+---
+
+import { Video } from "/snippets/video.mdx";
+
+[Vaults](/concepts/vaults) are the easiest way to earn on Neko: deposit once, and let it work for you. Your balance quietly grows over time as the [vault](/concepts/vaults) earns yield in the background, and when you withdraw, you get back what you put in (your **principal**) plus what it earned, minus any disclosed fee.
+
+Behind the scenes, Neko routes these deposits through **[DeFindex](/tech-we-use/defindex)**, a program that runs automatically on the blockchain, not a company managing it by hand, to put your money to work and generate that yield. It's been independently audited for safety, and your funds are never held by Neko along the way, they move straight between your wallet and the [vault](/concepts/vaults).
+
+<Tabs>
+  <Tab title="Watch a video">
+    <Video src="https://myhktinkiwrvzndqdgrv.supabase.co/storage/v1/object/public/videos-docs/vaults.mp4" topic="Depositing into your first vault" />
+
+    {/* VIDEO_PLACEHOLDER: Depositing into your first vault, 60–90s walkthrough */}
+  </Tab>
+  <Tab title="Read the explanation">
+    In **Basic mode** you see an earnings summary and a simple chart per [vault](/concepts/vaults). There's nothing to tune, risk controls run in the background.
+
+    ## Vaults overview
+
+    The **Vaults** tab lists every available [vault](/concepts/vaults) as a card: which asset it takes (for example USDC or CETES), the network it runs on, who created it, its **TVL** (total value locked, how much everyone has deposited combined), and its current **[APY](/concepts/apy)**. Each card has **Deposit** and **Withdraw** buttons, and a **My Positions** toggle at the top switches to a summary of what you personally hold.
+
+    <Frame>
+      <img src="/images/vault/vault-1.png" alt="Vaults tab showing available vault cards with TVL and APY" />
+    </Frame>
+
+    ## Depositing
+
+    Tap **Deposit** on a [vault](/concepts/vaults)'s card, or open the [vault](/concepts/vaults)'s detail page, to see its full **Deposit** panel: enter an amount, and it shows the network, the asset you're depositing, the current APY, and your projected monthly and yearly earnings before you confirm. Tap **Deposit [asset]** and approve in your wallet.
+
+    <Frame>
+      <img src="/images/vault/vault-deposit-1.png" alt="Vault detail page open on the Deposit tab" />
+    </Frame>
+
+    ## Withdrawing and claiming
+
+    Switch to the **Withdraw** tab on the same panel to pull money back out, enter an amount (or tap **MAX** for everything) and confirm. Your position summary underneath always shows what you've **Deposited**, what you've **Earned**, and your **Current Value**.
+
+    Earnings and principal are separate: **Withdraw** returns everything at once, what you originally deposited plus whatever it's earned. **Claim**, next to your earnings, pulls out only the yield you've accrued so far and leaves your original deposit untouched, still invested and still earning.
+
+    If you don't claim your earnings, they don't just sit there: they get added to your deposited amount and keep compounding, earning yield on top of yield instead of sitting idle.
+
+    <Frame>
+      <img src="/images/vault/vault-withdraw.png" alt="Vault detail page open on the Withdraw tab, with Claim next to Earnings" />
+    </Frame>
+
+    ## My Positions
+
+    Switch to **My Positions** from the Vaults tab to see everything you've deposited across [vaults](/concepts/vaults) in one place: a **Portfolio summary** (Total Deposited, Total Earnings, Net APY, and Projected Yield per year), and a table of **Your Vault Positions** listing each [vault](/concepts/vaults), the asset, how much you deposited, your earnings, current value, APY, and a **Claim** button for any [vault](/concepts/vaults) with earnings ready to collect.
+
+    <Frame>
+      <img src="/images/vault/vault-position.png" alt="My Positions tab with portfolio summary and vault positions table" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Strategies & Simulator" icon="diagram-project" href="/app-guide/expert/strategies" />
+  <Card title="Vaults" icon="vault" href="/concepts/vaults" />
+</CardGroup>
