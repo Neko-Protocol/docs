@@ -1,0 +1,52 @@
+---
+title: "Dashboard"
+description: "Your home screen with full detail: holdings, vault positions, pool data by protocol, and quick actions."
+icon: "gauge"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+Dashboard is the first screen you land on after connecting your wallet. **Expert mode** shows the same layout as Basic mode, with more detail surfaced in the pools table below.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Tour of the Expert mode Dashboard" />
+  </Tab>
+  <Tab title="Read the explanation">
+    ## Top stats
+
+    Three numbers at the top: **Total Portfolio Value**, **Assets Held**, and the **Highest [Vault](/concepts/vaults) APY** available on the platform. These depend on live prices, so they can shift as markets move.
+
+    ## Your Holdings
+
+    The assets sitting in your wallet, each with its icon, name, amount, and current USD value. An **Explore assets** link takes you to [Discover](/app-guide/expert/discover) for the full catalog with oracle and risk detail.
+
+    ## Your Positions
+
+    A table of your active [vault](/concepts/vaults) deposits: [vault](/concepts/vaults) name (for example a [DeFindex](/tech-we-use/defindex)-backed USDC [vault](/concepts/vaults)), the underlying asset, how much you deposited, earnings so far, current value, APY, and a **Claim** button for earnings ready to collect.
+
+    <Tip>If you also hold a borrowed position, this is where a health factor cue would show up before anything gets liquidated automatically.</Tip>
+
+    ## Quick Actions
+
+    Three shortcuts: **Explore Assets** (Discover), **Add Liquidity** (jump into a pool), and **Your Cart** (review pending purchases).
+
+    ## Top Pools
+
+    The most active pools across every integrated protocol, shown by name (for example **Blend** or **Aqua**), with **Supply APY**, **Total liquidity**, **Total Borrowed**, and **Borrow APY** columns. A **View all pools** link opens the full list.
+
+    <Note>Total Borrowed and Borrow APY can show as empty for a pool with no active borrowing yet. See [Pools & lending](/app-guide/expert/pools-and-lending) for how supply and borrow markets work.</Note>
+
+    ## Discover Assets
+
+    A preview of a few assets (spot price and category), with a **View all** link into the full [Discover](/app-guide/expert/discover) catalog.
+
+    <Tip>For large balances, spot-check totals against a chain explorer. The dashboard rounds numbers for readability.</Tip>
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Discover" icon="compass" href="/app-guide/expert/discover" />
+</CardGroup>
