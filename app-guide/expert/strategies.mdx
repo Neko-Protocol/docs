@@ -1,0 +1,56 @@
+---
+title: "Strategies & Simulator"
+description: "Pre-built vault and pool combinations for different risk levels, and a way to preview earnings before you deposit."
+icon: "diagram-project"
+---
+
+import { Video } from "/snippets/video.mdx";
+
+**Strategies** bundle [vault](/concepts/vaults) and pool positions into templates with plain-language risk bands — you're not assembling raw allocations yourself.
+
+<Video src="https://myhktinkiwrvzndqdgrv.supabase.co/storage/v1/object/public/videos-docs/Strategies.mp4" topic="Launching a strategy from the catalog" />
+
+{/* VIDEO_PLACEHOLDER: Launching a strategy from the catalog, 60–90s walkthrough */}
+
+## Using a strategy
+
+<Steps>
+  <Step title="Browse the catalog">
+    Read each card's summary and its past-performance range in the fine print.
+  </Step>
+  <Step title="Open a strategy's detail page">
+    Compare which [vaults](/concepts/vaults) and pools it includes, and any adjustable settings it exposes.
+  </Step>
+  <Step title="Personalize or accept defaults">
+    Use the defaults, or adjust within the limits the strategy allows, then confirm to save your allocation.
+  </Step>
+</Steps>
+
+<Warning>A strategy template saves you time assembling positions, but it doesn't remove the underlying smart-contract risk of the [vaults](/concepts/vaults) and pools it's built from.</Warning>
+
+Expert mode users tend to reach for Strategies when a single [vault](/concepts/vaults) feels too narrow, but manually splitting across several screens feels like more work than it's worth.
+
+## Simulator: preview before you commit
+
+Before depositing into a [vault](/concepts/vaults), pool, or strategy, use the **Simulator** to see an illustrative outcome first.
+
+<Steps>
+  <Step title="Pick an investment">
+    Choose it from Discover context or from the Simulator's own filters.
+  </Step>
+  <Step title="Enter an amount">
+    Use the amount you'd actually put in — the estimate scales with it.
+  </Step>
+  <Step title="Compare checkpoints">
+    Simulator shows illustrative results at 1, 6, and 12 months side by side, so you can see how the estimate compounds.
+  </Step>
+</Steps>
+
+<Tip>Simulator outputs use today's rates and fees, which can both change. Ask yourself what happens to the projection if rates drop or the market stalls.</Tip>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Vaults" icon="vault" href="/app-guide/basic/vault" />
+  <Card title="APY" icon="percent" href="/concepts/apy" />
+</CardGroup>
