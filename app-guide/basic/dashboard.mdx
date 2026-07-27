@@ -1,0 +1,69 @@
+---
+title: "Dashboard"
+description: "Your home screen: what you own, what it's worth, your open positions, and quick actions."
+icon: "gauge"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+Dashboard is the first screen you land on after connecting your wallet. It shows what you hold, what it's worth today, your open positions, and shortcuts into the rest of the app.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Tour of the Dashboard" />
+  </Tab>
+  <Tab title="Read the explanation">
+    ## Top stats
+
+    Three numbers summarize your account at a glance:
+
+    - **Total Portfolio Value**: the current USD value of everything you hold, wallet balances plus [vault](/concepts/vaults) deposits, added together.
+    - **Assets Held**: how many different assets you're holding right now (for example, holding both XLM and EURC counts as 2).
+    - **Highest [Vault](/concepts/vaults) APY**: the best annual return currently available across all [vaults](/concepts/vaults) on the platform, shown as a percentage.
+
+    These use live prices, so they can shift a little as markets move, even if you haven't bought or sold anything.
+
+    ## Your Holdings
+
+    The assets sitting in your wallet, each with its icon, name, amount, and current USD value (for example, your XLM or EURC balance). An **Explore assets** link takes you to [Discover](/app-guide/basic/discover) to find more.
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-1.png" alt="Dashboard top stats and Your Holdings" />
+    </Frame>
+
+    ## Your Positions
+
+    A table of your active [vault](/concepts/vaults) and pool positions: which [vault](/concepts/vaults) or pool, which asset, how much you deposited, how much you've earned so far, its current value, the APY, and a **Claim** button for any earnings ready to collect.
+
+    ## Quick Actions
+
+    Three shortcuts to jump straight into the protocol:
+
+    - **Explore Assets**: browse [RWA](/concepts/rwas) tokens and prices in Discover.
+    - **Add Liquidity**: earn yield in pools.
+    - **Your Cart**: review pending purchases you've queued up. See [Cart](/app-guide/basic/cart).
+
+    ## Top Pools
+
+    A table of the most active pools across partner protocols, with Supply APY and Total liquidity for each, and a **View all pools** link.
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-2.png" alt="Your Positions, Quick Actions, and Top Pools" />
+    </Frame>
+
+    ## Discover Assets
+
+    A preview of a few assets you can invest in (their current spot price and category, like Stablecoin or Sovereign Bond), with a **View all** link into the full [Discover](/app-guide/basic/discover) catalog.
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-3.png" alt="Discover Assets preview" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Discover" icon="compass" href="/app-guide/basic/discover" />
+  <Card title="Vaults" icon="vault" href="/app-guide/basic/vault" />
+</CardGroup>
