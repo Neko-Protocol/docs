@@ -1,0 +1,38 @@
+---
+title: "APY"
+description: "What APY means on Neko, where the return comes from, and why it moves."
+icon: "percent"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
+
+## What APY is
+
+**APY** stands for **Annual Percentage Yield**. In plain terms, it answers one question: "if I leave my money here for a year, roughly how much extra would I end up with?" A 5% APY means \$100 held for a year would grow to about \$105, assuming the rate you see today stays the same the whole time.
+
+It's an estimate based on current conditions, not a locked-in promise, the real rate can move up or down as markets change, which is why you'll sometimes see the number shift even though you haven't done anything.
+
+Most products on Neko use a **floating** rate tied to bond coupons, borrower demand, or pool trading fees, unless something is explicitly marketed as fixed.
+
+## Where the number comes from
+
+- **[Vaults](/concepts/vaults).** Income from the underlying strategy: bond coupons, credit spreads, or (for pool-backed strategies) trading fees. See [Vaults](/app-guide/basic/vault).
+- **Liquidity pools.** Trading fees, net of **impermanent loss** (the drift that happens when a pool's two token balances rebalance as prices move apart). Pool APY blends fees with that risk, so a high number isn't free money. See [Pools & lending](/app-guide/expert/pools-and-lending).
+- **Lending markets** (once Blend ships). A rate that moves with pool utilization, how much of the pool is currently borrowed.
+
+## How Neko shows it
+
+Discover cards and [vault](/concepts/vaults) pages label APY with a timestamp. A fresh print matters most when markets move quickly — an APY from an hour ago in a fast market may already be stale.
+
+<Tip>If you're borrowing against a position, compare the borrow cost to the earn APY on what you're holding — that difference is your real net income, not the headline number alone.</Tip>
+
+<VideoPlaceholder topic="Reading APY on Discover and vault pages" />
+
+{/* VIDEO_PLACEHOLDER: Reading APY on Discover and vault pages, 60s walkthrough */}
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Types of RWAs on Neko" icon="layer-group" href="/concepts/types-of-rwas" />
+  <Card title="Vaults" icon="vault" href="/concepts/vaults" />
+</CardGroup>
