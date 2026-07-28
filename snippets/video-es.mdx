@@ -1,0 +1,31 @@
+export const Video = ({ src, topic, poster, autoplay = false, loop = false }) => {
+  const shouldAutoplay =
+    autoplay &&
+    typeof window !== "undefined" &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  return (
+    <Frame caption={topic}>
+      <video
+        style={{
+          width: "100%",
+          height: "auto",
+          aspectRatio: "16 / 9",
+          borderRadius: "0.75rem",
+          display: "block",
+          background: "#0f172a",
+        }}
+        muted
+        playsInline
+        preload="metadata"
+        {...(poster ? { poster } : {})}
+        {...(shouldAutoplay
+          ? { autoPlay: true, loop: true }
+          : { controls: true, loop })}
+      >
+        <source src={src} type="video/mp4" />
+        Tu navegador no admite la etiqueta de video.
+      </video>
+    </Frame>
+  );
+};
