@@ -1,0 +1,53 @@
+---
+title: "Discover"
+description: "El mismo catálogo que el Modo Básico, pero tocar un activo abre su página de detalle en lugar de un flujo de Comprar Activo o carrito."
+icon: "telescope"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+Discover en **Modo Experto** muestra el mismo catálogo que el Modo Básico: los mismos filtros, las mismas tarjetas, los mismos datos de precio y APY. La diferencia aparece cuando interactúas con una tarjeta. No hay botón de **Comprar Activo** ni de **Carrito de Compras**, tocar una tarjeta abre la página de detalle de ese activo directamente.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Explorando y leyendo activos en Discover del Modo Experto" />
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Mismo catálogo, sin carrito
+
+    Filtra por categoría (**Todos**, **Stablecoins**, **Bonos Soberanos**, **Nativo**) o busca por símbolo o nombre, igual que en el [Modo Básico](/es/app-guide/basic/discover). Cada tarjeta muestra el ícono, ticker, nombre, precio spot, APY cuando el activo genera rendimiento, y una etiqueta de categoría. Toca cualquier tarjeta para abrir su página de detalle.
+
+    <Frame>
+      <img src="/images/discover/expert-discover-1.png" alt="Catálogo de Discover en Modo Experto con filtros y tarjetas de activos" />
+    </Frame>
+
+    ## Página de detalle del activo
+
+    Abrir una tarjeta te lleva a una página dedicada para ese activo, con un enlace de **Volver a Discover** arriba:
+
+    - **Precio spot**: el precio actual y de qué feed proviene (por ejemplo "vía Reflector").
+    - **Gráfico de precio**: cambia entre rangos de 3H, 1D, 3D, y 7D, con un indicador **En vivo** cuando el feed está transmitiendo.
+    - **Resumen**: una descripción en lenguaje sencillo de qué es el activo y quién lo emite.
+    - **Detalles**: más datos específicos del activo, junto a la pestaña Resumen.
+
+    <Frame>
+      <img src="/images/discover/expert-discover-2.png" alt="Página de detalle del activo para CETES con gráfico de precio, botones Swap en Neko y Comprar en Etherfuse" />
+    </Frame>
+
+    ## Comprar un activo
+
+    En lugar del panel de compra dentro de la app del Modo Básico, la página de detalle te da dos opciones:
+
+    - **Swap en Neko**: intercambia por el activo ahí mismo usando el propio enrutamiento de Neko. Ver [Swap](/es/app-guide/expert/swap).
+    - **Comprar en [Emisor]**: un enlace externo para comprar el activo directamente desde el socio que lo emite (por ejemplo Etherfuse para CETES).
+
+    <Tip>Los rendimientos y precios cambian constantemente, y los emisores pueden actualizar los términos. Trata cada número como el estimado de hoy, no como una tasa fija.</Tip>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Activos del mundo real" icon="building-columns" href="/es/concepts/rwas" />
+  <Card title="Swap" icon="arrow-right-arrow-left" href="/es/app-guide/expert/swap" />
+</CardGroup>

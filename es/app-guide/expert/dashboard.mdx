@@ -1,0 +1,52 @@
+---
+title: "Dashboard"
+description: "Tu pantalla principal con detalle completo: activos, posiciones en vaults, datos de pools por protocolo, y acciones rápidas."
+icon: "gauge"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+Dashboard es la primera pantalla a la que llegas después de conectar tu wallet. El **Modo Experto** muestra el mismo diseño que el Modo Básico, con más detalle expuesto en la tabla de pools de abajo.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Recorrido por el Dashboard en Modo Experto" />
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Estadísticas principales
+
+    Tres números arriba: **Valor Total del Portafolio**, **Activos en Posesión**, y el **APY Más Alto de Vault** disponible en la plataforma. Estos dependen de precios en vivo, así que pueden variar conforme se mueve el mercado.
+
+    ## Tus Activos
+
+    Los activos que están en tu wallet, cada uno con su ícono, nombre, cantidad, y valor actual en USD. Un enlace de **Explorar activos** te lleva a [Discover](/es/app-guide/expert/discover) para el catálogo completo con detalle de oráculos y riesgo.
+
+    ## Tus Posiciones
+
+    Una tabla de tus depósitos activos en [vault](/es/concepts/vaults): nombre del [vault](/es/concepts/vaults) (por ejemplo un [vault](/es/concepts/vaults) de USDC respaldado por [DeFindex](/es/tech-we-use/defindex)), el activo subyacente, cuánto depositaste, ganancias hasta ahora, valor actual, APY, y un botón de **Reclamar** para ganancias listas para cobrar.
+
+    <Tip>Si también tienes una posición en préstamo, aquí es donde aparecería una señal del factor de salud antes de que algo se liquide automáticamente.</Tip>
+
+    ## Acciones Rápidas
+
+    Tres atajos: **Explorar Activos** (Discover), **Agregar Liquidez** (entrar a un pool), y **Tu Carrito** (revisar compras pendientes).
+
+    ## Pools Principales
+
+    Los pools más activos entre todos los protocolos integrados, mostrados por nombre (por ejemplo **Blend** o **Aqua**), con columnas de **APY de Suministro**, **Liquidez Total**, **Total Prestado**, y **APY de Préstamo**. Un enlace de **Ver todos los pools** abre la lista completa.
+
+    <Note>Total Prestado y APY de Préstamo pueden aparecer vacíos para un pool sin préstamos activos todavía. Ver [Pools & lending](/es/app-guide/expert/pools-and-lending) para saber cómo funcionan los mercados de suministro y préstamo.</Note>
+
+    ## Descubrir Activos
+
+    Una vista previa de algunos activos (precio spot y categoría), con un enlace de **Ver todos** hacia el catálogo completo de [Discover](/es/app-guide/expert/discover).
+
+    <Tip>Para balances grandes, verifica los totales contra un explorador de blockchain. El dashboard redondea los números para mayor legibilidad.</Tip>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Discover" icon="compass" href="/es/app-guide/expert/discover" />
+</CardGroup>

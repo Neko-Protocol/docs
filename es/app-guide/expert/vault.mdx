@@ -1,0 +1,63 @@
+---
+title: "Vaults"
+description: "Deposita una vez, deja que el vault gane por ti. No necesitas gestión activa."
+icon: "vault"
+---
+
+import { Video } from "/snippets/video-es.mdx";
+
+Los [Vaults](/es/concepts/vaults) son la forma más fácil de ganar en Neko: deposita una vez, y deja que trabaje para ti. Tu balance crece silenciosamente con el tiempo mientras el [vault](/es/concepts/vaults) genera rendimiento en segundo plano, y cuando retiras, recibes de vuelta lo que pusiste (tu **principal**) más lo que ganó, menos cualquier comisión ya informada.
+
+Detrás de escenas, Neko enruta estos depósitos a través de **[DeFindex](/es/tech-we-use/defindex)**, un programa que corre automáticamente en la blockchain, no una empresa gestionándolo a mano, para poner tu dinero a trabajar y generar ese rendimiento. Ha sido auditado de forma independiente por seguridad, y tus fondos nunca son retenidos por Neko en el camino, se mueven directamente entre tu wallet y el [vault](/es/concepts/vaults).
+
+<Tabs>
+  <Tab title="Ver un video">
+    <Video src="https://myhktinkiwrvzndqdgrv.supabase.co/storage/v1/object/public/videos-docs/vaults.mp4" topic="Depositando en tu primer vault" />
+
+    {/* VIDEO_PLACEHOLDER: Depositando en tu primer vault, walkthrough de 60–90s */}
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Resumen de Vaults
+
+    La pestaña **Vaults** lista cada [vault](/es/concepts/vaults) disponible como una tarjeta: qué activo acepta (por ejemplo USDC o CETES), la red en la que corre, quién lo creó, su **TVL** (valor total bloqueado, cuánto ha depositado todo el mundo combinado), y su **[APY](/es/concepts/apy)** actual. Cada tarjeta tiene botones de **Depositar** y **Retirar**, y un interruptor de **Mis Posiciones** arriba cambia a un resumen de lo que tú personalmente posees.
+
+    <Frame>
+      <img src="/images/vault/vault-1.png" alt="Pestaña Vaults mostrando tarjetas de vaults disponibles con TVL y APY" />
+    </Frame>
+
+    ## Depositando
+
+    Toca **Depositar** en la tarjeta de un [vault](/es/concepts/vaults), o abre la página de detalle del [vault](/es/concepts/vaults), para ver su panel completo de **Depositar**: ingresa un monto, y muestra la red, el activo que estás depositando, el APY actual, y tus ganancias proyectadas mensuales y anuales antes de confirmar. Toca **Depositar [activo]** y aprueba en tu wallet.
+
+    <Frame>
+      <img src="/images/vault/vault-deposit-1.png" alt="Página de detalle del vault abierta en la pestaña Depositar" />
+    </Frame>
+
+    ## Retirando y reclamando
+
+    Cambia a la pestaña **Retirar** en el mismo panel para sacar dinero, ingresa un monto (o toca **MAX** para todo) y confirma. El resumen de tu posición debajo siempre muestra lo que has **Depositado**, lo que has **Ganado**, y tu **Valor Actual**.
+
+    Las ganancias y el principal son independientes: **Retirar** devuelve todo a la vez, lo que depositaste originalmente más lo que ha ganado. **Reclamar**, junto a tus ganancias, saca solo el rendimiento que has acumulado hasta ahora y deja tu depósito original intacto, aún invertido y aún ganando.
+
+    Si no reclamas tus ganancias, no se quedan ahí sin más: se agregan a tu monto depositado y siguen componiéndose, ganando rendimiento sobre rendimiento en lugar de quedarse inactivas.
+
+    <Frame>
+      <img src="/images/vault/vault-withdraw.png" alt="Página de detalle del vault abierta en la pestaña Retirar, con Reclamar junto a Ganancias" />
+    </Frame>
+
+    ## Mis Posiciones
+
+    Cambia a **Mis Posiciones** desde la pestaña Vaults para ver todo lo que has depositado entre [vaults](/es/concepts/vaults) en un solo lugar: un **Resumen del portafolio** (Total Depositado, Ganancias Totales, APY Neto, y Rendimiento Proyectado por año), y una tabla de **Tus Posiciones en Vaults** listando cada [vault](/es/concepts/vaults), el activo, cuánto depositaste, tus ganancias, valor actual, APY, y un botón de **Reclamar** para cualquier [vault](/es/concepts/vaults) con ganancias listas para cobrar.
+
+    <Frame>
+      <img src="/images/vault/vault-position.png" alt="Pestaña Mis Posiciones con resumen del portafolio y tabla de posiciones en vaults" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Estrategias y Simulador" icon="diagram-project" href="/es/app-guide/expert/strategies" />
+  <Card title="Vaults" icon="vault" href="/es/concepts/vaults" />
+</CardGroup>

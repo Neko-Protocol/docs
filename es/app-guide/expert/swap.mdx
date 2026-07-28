@@ -1,0 +1,41 @@
+---
+title: "Swap"
+description: "Intercambia un token por otro con enrutamiento entre la liquidez disponible. Solo en Modo Experto."
+icon: "arrow-right-arrow-left"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+**Swap** solo aparece en **Modo Experto**, el deslizamiento de precio, las ejecuciones parciales, y el riesgo del venue son más fáciles de manejar mal aquí que en una [Compra](/es/app-guide/basic/discover) directa o un depósito en [vault](/es/concepts/vaults), así que Neko mantiene a los usuarios nuevos en los flujos más simples por defecto.
+
+Neko revisa cotizaciones de **Soroswap** y, para pares conectados a EVM, **CoW Swap**, y luego te enruta hacia la que sea mejor después de comisiones.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Haciendo swap de tokens" />
+
+    {/* VIDEO_PLACEHOLDER: Haciendo swap de tokens, walkthrough de 60–90s */}
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Leer la pantalla de Swap
+
+    Tres modos arriba: **Swap** (intercambia de inmediato a la tasa actual), **Limit**, y **TWAP** (precio promedio ponderado por tiempo, divide una operación a lo largo del tiempo en lugar de ejecutarla toda de una vez). Debajo de eso:
+
+    - **From / To**: elige el token que estás gastando y el token que quieres, con tu balance actual y un botón **Max** debajo de cada uno. Toca el ícono de swap entre ellos para invertir la dirección.
+    - **Monto**: ingresa cuánto quieres operar, con el valor en USD mostrado debajo. El monto del otro lado se actualiza automáticamente según la cotización actual.
+    - **Comisión de la plataforma**: la parte que Neko cobra por el swap, mostrada tanto en porcentaje como en el monto real en el token con el que estás pagando.
+    - **Tolerancia de deslizamiento**: lo máximo que el precio puede moverse en tu contra antes de que la operación falle en lugar de ejecutarse a una tasa peor.
+
+    <Frame>
+      <img src="/images/swap/swap.png" alt="Pantalla de Swap con campos From/To, comisión de la plataforma, y tolerancia de deslizamiento" />
+    </Frame>
+
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Pools & lending" icon="droplets" href="/es/app-guide/expert/pools-and-lending" />
+  <Card title="Configuración" icon="gear" href="/es/app-guide/expert/settings" />
+</CardGroup>

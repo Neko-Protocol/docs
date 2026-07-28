@@ -1,0 +1,69 @@
+---
+title: "Configuración"
+description: "Cambia al Modo Básico, gestiona tu wallet, red, y preferencias."
+icon: "gear"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+Configuración contiene tu preferencia de modo, wallet conectada, y otras preferencias, organizadas en cinco pestañas: **Preferencias**, **Modo de App**, **Correo**, **Wallet**, y **Red**.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Configurando tu cuenta de Neko" />
+
+    {/* VIDEO_PLACEHOLDER: Configurando tu cuenta de Neko, walkthrough de 60–90s */}
+  </Tab>
+  <Tab title="Leer la explicación">
+    <Tabs>
+      <Tab title="Preferencias">
+        Configura tu **Moneda de Visualización**, la moneda en la que se muestran precios y balances en toda Neko (USD, MXN, EUR, GBP, JPY, CAD, BRL, o COP). Esto solo cambia cómo se muestran los números, no convierte ni mueve ninguna de tus tenencias reales.
+
+        <Frame>
+          <img src="/images/settings/preferences.png" alt="Pestaña Preferencias con el menú desplegable de Moneda de Visualización abierto" />
+        </Frame>
+
+        Por ejemplo, cambiar la **Moneda de Visualización** a MXN cambia los precios en toda la app, como en [Discover](/es/app-guide/expert/discover), de USD a MXN (MX$):
+
+        <Frame>
+          <img src="/images/settings/currency-example.png" alt="Discover mostrando precios en MXN después de cambiar la moneda de visualización" />
+        </Frame>
+      </Tab>
+      <Tab title="Modo de App">
+        Cambia entre **App Básica** (lenguaje simple, experiencia guiada, complejidad oculta) y **App Experta** (datos completos, métricas avanzadas, y todas las funciones del protocolo), puedes cambiarlo aquí en cualquier momento.
+
+        <Frame>
+          <img src="/images/settings/app-mode.png" alt="Pestaña Modo de App con opciones de App Básica y App Experta" />
+        </Frame>
+      </Tab>
+      <Tab title="Correo">
+        Agregar un correo es opcional, Neko solo lo usa para contactarte sobre la actividad de tu cuenta. Ingresa una dirección y toca **Enviar enlace de verificación** para recibir un enlace mágico que confirme que eres su dueño, una vez verificado, muestra una insignia verde de **Verificado**.
+
+        <Frame>
+          <img src="/images/settings/email.png" alt="Pestaña Correo mostrando un correo verificado y el campo para cambiar correo" />
+        </Frame>
+      </Tab>
+      <Tab title="Wallet">
+        Muestra con qué wallet estás conectado (**Proveedor**) y la **Dirección** de tu wallet, acortada con un botón de copiar. Toca **Desconectar Wallet** para cerrar sesión, necesitarás reconectarte para volver a usar Neko.
+
+        <Frame>
+          <img src="/images/settings/wallet.png" alt="Pestaña Wallet con proveedor, dirección, y botón Desconectar Wallet" />
+        </Frame>
+      </Tab>
+      <Tab title="Red">
+        Detalles técnicos sobre la red blockchain a la que se conecta Neko: la **Red Activa** (Stellar, actualmente en Mainnet), la **URL de RPC** y **URL de Horizon** con las que se comunica, y la **Frase de Contraseña de Red** que identifica esta red específica. Un enlace de **Abrir Stellar Lab** te lleva a las propias herramientas de Stellar si quieres inspeccionar algo de esto tú mismo. No necesitarás tocar esta pestaña para uso normal.
+
+        <Frame>
+          <img src="/images/settings/network.png" alt="Pestaña Red con red activa, URL de RPC, URL de Horizon, y frase de contraseña de red" />
+        </Frame>
+      </Tab>
+    </Tabs>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Dashboard" icon="gauge" href="/es/app-guide/expert/dashboard" />
+  <Card title="Comprar USDC" icon="circle-dollar-sign" href="/es/tutorials/buy-usdc" />
+</CardGroup>

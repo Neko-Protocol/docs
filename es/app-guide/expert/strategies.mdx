@@ -1,0 +1,56 @@
+---
+title: "Estrategias y Simulador"
+description: "Combinaciones prearmadas de vaults y pools para distintos niveles de riesgo, y una forma de previsualizar ganancias antes de depositar."
+icon: "diagram-project"
+---
+
+import { Video } from "/snippets/video-es.mdx";
+
+**Estrategias** agrupa posiciones de [vault](/es/concepts/vaults) y pool en plantillas con bandas de riesgo en lenguaje simple, no ensamblas asignaciones desde cero tú mismo.
+
+<Video src="https://myhktinkiwrvzndqdgrv.supabase.co/storage/v1/object/public/videos-docs/Strategies.mp4" topic="Lanzando una estrategia desde el catálogo" />
+
+{/* VIDEO_PLACEHOLDER: Lanzando una estrategia desde el catálogo, walkthrough de 60–90s */}
+
+## Usar una estrategia
+
+<Steps>
+  <Step title="Explora el catálogo">
+    Lee el resumen de cada tarjeta y su rango de rendimiento histórico en la letra pequeña.
+  </Step>
+  <Step title="Abre la página de detalle de una estrategia">
+    Compara qué [vaults](/es/concepts/vaults) y pools incluye, y cualquier ajuste que exponga.
+  </Step>
+  <Step title="Personaliza o acepta los valores por defecto">
+    Usa los valores por defecto, o ajusta dentro de los límites que permite la estrategia, y luego confirma para guardar tu asignación.
+  </Step>
+</Steps>
+
+<Warning>Una plantilla de estrategia te ahorra tiempo al ensamblar posiciones, pero no elimina el riesgo de smart contract subyacente de los [vaults](/es/concepts/vaults) y pools sobre los que está construida.</Warning>
+
+Los usuarios de Modo Experto suelen recurrir a Estrategias cuando un solo [vault](/es/concepts/vaults) se siente demasiado limitado, pero dividir manualmente entre varias pantallas se siente como más trabajo del que vale.
+
+## Simulador: previsualiza antes de comprometerte
+
+Antes de depositar en un [vault](/es/concepts/vaults), pool, o estrategia, usa el **Simulador** para ver primero un resultado ilustrativo.
+
+<Steps>
+  <Step title="Elige una inversión">
+    Selecciónala desde el contexto de Discover o desde los propios filtros del Simulador.
+  </Step>
+  <Step title="Ingresa un monto">
+    Usa el monto que realmente pondrías, el estimado escala según eso.
+  </Step>
+  <Step title="Compara puntos de control">
+    El Simulador muestra resultados ilustrativos a 1, 6, y 12 meses lado a lado, para que veas cómo se compone el estimado.
+  </Step>
+</Steps>
+
+<Tip>Los resultados del Simulador usan las tasas y comisiones de hoy, que pueden cambiar. Pregúntate qué pasa con la proyección si las tasas bajan o el mercado se estanca.</Tip>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Vaults" icon="vault" href="/es/app-guide/basic/vault" />
+  <Card title="APY" icon="percent" href="/es/concepts/apy" />
+</CardGroup>
