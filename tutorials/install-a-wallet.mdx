@@ -1,27 +1,111 @@
 ---
 title: "Install a wallet"
-description: "Pick the right wallet for your phone or browser, then set it up in a few minutes."
+description: "What a wallet is, and step by step setup for browser and for phone."
 icon: "wallet"
 ---
 
-import { Video } from "/snippets/video.mdx";
+import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
 
-A wallet is a free, secure app that holds your money securely. You need one to use Neko. Pick one based on how you want to use Neko most often.
+## What is a wallet?
 
-<Video src="https://myhktinkiwrvzndqdgrv.supabase.co/storage/v1/object/public/videos-docs/install-a-wallet.mp4" topic="How to pick a wallet for Neko in under a minute" />
+A **wallet** is a free app that holds your money for you, on your phone or computer. Think of it like a bank account app, except there's no bank behind it, you're the only one who can open it and approve what happens with your money. Not Neko, not anyone else. You need one to use Neko.
 
-{/* VIDEO_PLACEHOLDER: How to pick a wallet for Neko in under a minute, 60 second walkthrough */}
+Read more in [Wallet](/concepts/wallet).
 
-## Pick a wallet
+Pick the setup that matches how you'll use Neko most often: on a computer, or on your phone.
 
-<CardGroup cols={2}>
-  <Card title="Freighter (browser)" icon="globe" href="/tutorials/install-freighter">
-    Best for desktop and laptop use. Works with Chrome, Brave, Firefox, and Edge. Recommended if you mostly use Neko on a computer.
-  </Card>
-  <Card title="Lobstr (mobile)" icon="smartphone" href="/tutorials/install-lobstr">
-    Best for phones. Easy to use, popular in Latin America, and supports USDC and XLM out of the box.
-  </Card>
-</CardGroup>
+## Install a wallet on browser
+
+We recommend **Freighter** for using Neko on a computer. It's free and open source, and works in Chrome, Brave, Firefox, and Edge.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Installing Freighter and creating your first wallet" />
+  </Tab>
+  <Tab title="Read the steps">
+    <Steps>
+      <Step title="Open the official site">
+        Go to [freighter.app](https://www.freighter.app/). Avoid links from unknown sources. Bookmark the page so you always open the real one.
+      </Step>
+      <Step title="Install the extension">
+        Click **Add to Chrome** (or your browser's equivalent). Approve the install in your browser's popup. Pin the Freighter icon to your toolbar so you can find it later.
+      </Step>
+      <Step title="Create your wallet">
+        Click the Freighter icon and pick **Create Wallet**. Set a password you will remember. This password unlocks Freighter on this computer only.
+      </Step>
+      <Step title="Save your 12 word recovery phrase">
+        Freighter will show you a 12 word phrase. Write it on paper. Anyone with this phrase can take all your money. Do not store it on your phone, in chat apps, in email, or in cloud notes. Confirm the phrase when Freighter asks.
+      </Step>
+      <Step title="Fund your wallet with a little XLM">
+        Your wallet needs a small amount of XLM (the network fee token) to do anything. About 5 XLM is enough to start. You can buy XLM on most large exchanges and send it to your Freighter address.
+        See [Buy USDC](/tutorials/buy-usdc) for one way to pick up XLM at the same time.
+      </Step>
+      <Step title="Connect to Neko">
+        Open the [Neko app](https://nekoprotocol.xyz), click **Connect Wallet**, choose Freighter, and approve in the popup. You are in.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Warning>If you lose your recovery phrase, your money is gone forever. Neko and the Freighter team cannot recover it for you. Use a paper or metal backup and keep it offline.</Warning>
+
+<AccordionGroup>
+  <Accordion title="Is Freighter safe?">
+    Yes. Freighter is open source and has been maintained by a trusted team. The risk is not the wallet itself, it is your recovery phrase. Keep that offline and you are safe.
+  </Accordion>
+  <Accordion title="Do I need to pay to install Freighter?">
+    No. The wallet is free. You only need a small amount of XLM in it to pay network fees.
+  </Accordion>
+  <Accordion title="Can I use Freighter on more than one computer?">
+    Yes. Install Freighter on the other computer and choose **Import Wallet** instead of Create. Enter your recovery phrase. Use a strong password on each device.
+  </Accordion>
+</AccordionGroup>
+
+## Install a wallet on phone
+
+We recommend **Lobstr** for using Neko on your phone. It's free, has been around since 2016, and is widely used across Latin America. It also makes it simple to receive USDC and XLM.
+
+<Tabs>
+  <Tab title="Watch a video">
+    <VideoPlaceholder topic="Installing Lobstr on iPhone or Android and creating your first wallet" />
+  </Tab>
+  <Tab title="Read the steps">
+    <Steps>
+      <Step title="Install the app">
+        On iPhone, open the App Store and search for **Lobstr**. On Android, open Google Play and search for **Lobstr**. The publisher should be **Lobstr**. Install and open.
+      </Step>
+      <Step title="Create your account">
+        Tap **Sign Up**. Enter an email and a strong password. Confirm the email Lobstr sends you. This account lets you sync the app across devices.
+      </Step>
+      <Step title="Back up your recovery phrase">
+        In Settings, go to **Security** and then **Backup**. Lobstr will show you a 24 word phrase. Write it on paper. Anyone with this phrase can take all your money. Do not save it as a screenshot, in chat apps, or in cloud notes.
+      </Step>
+      <Step title="Add USDC to your wallet">
+        On the home tab, tap **+** next to **Assets**. Search for **USDC** by Centre. Tap **Add**. This tells your wallet to accept USDC. You will need a tiny bit of XLM first (Lobstr will guide you).
+      </Step>
+      <Step title="Get a small amount of XLM for fees">
+        Lobstr lets you buy XLM with a card from inside the app, or you can send some from an exchange. About 5 XLM is enough to start.
+      </Step>
+      <Step title="Connect Lobstr to Neko">
+        Open the [Neko app](https://nekoprotocol.xyz) in your phone's browser, tap **Connect Wallet**, and pick Lobstr. Approve the connection inside the Lobstr app when it asks.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Warning>Your 24 word recovery phrase is the only way back into your money if you lose your phone or forget your password. Keep it on paper, offline, in a safe place.</Warning>
+
+<AccordionGroup>
+  <Accordion title="Is Lobstr safe?">
+    Yes. Lobstr is a long-established wallet used by hundreds of thousands of people. Keep your recovery phrase offline and your account password strong.
+  </Accordion>
+  <Accordion title="Do I need an account just to use the wallet?">
+    Yes, Lobstr asks for an email and password to let you sync across devices and recover your account. Your money is still controlled by your recovery phrase, not the email.
+  </Accordion>
+  <Accordion title="Can I buy USDC inside Lobstr?">
+    Yes. Lobstr has built in card purchases for XLM in many countries. Once you have XLM, you can swap to USDC inside the app. See [Buy USDC](/tutorials/buy-usdc) for other options.
+  </Accordion>
+</AccordionGroup>
 
 ## Other options
 
