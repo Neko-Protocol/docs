@@ -1,0 +1,40 @@
+---
+title: "Trustlines"
+description: "What a trustline is, why Stellar assets need one, and when Neko asks you to add it."
+icon: "link"
+---
+
+## What a trustline is
+
+Neko runs on **Stellar**, and on Stellar your wallet doesn't automatically accept every asset that exists. For anything other than XLM (the network's native asset), you have to explicitly tell your wallet "I'm willing to hold this" before it can land there, that's a **trustline**.
+
+Think of it like opting in to a new currency at your bank before they'll let you hold it, without a trustline for an asset, it simply can't arrive in your wallet, even if someone tries to send it to you or you try to buy it.
+
+## Why it exists
+
+This isn't a Neko rule, it's how the Stellar network itself works. Adding a trustline sets aside a small amount of XLM in your wallet as a network reserve. That reserve is standard for every Stellar wallet, it's what keeps the network from being flooded with junk tokens nobody wants, and you get it back if you ever remove the trustline.
+
+## When Neko asks you to add one
+
+The first time you buy or receive an asset you don't already hold, your wallet may show an **Add Trustline** step before it lets you confirm the purchase. This happens once per asset, after that, buying more of the same asset won't ask again.
+
+<Steps>
+  <Step title="Your wallet prompts you">
+    Alongside the transaction details, you'll see an **Add Trustline** link if you don't already hold that asset.
+  </Step>
+  <Step title="Approve it">
+    Tap it and confirm in your wallet, same as any other approval.
+  </Step>
+  <Step title="Continue the purchase">
+    Once the trustline is added, confirm the actual buy as usual.
+  </Step>
+</Steps>
+
+<Tip>This is a one-time step per asset, per wallet. If you've already bought or received an asset before, you won't see this again for that same asset.</Tip>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Wallet" icon="wallet" href="/concepts/wallet" />
+  <Card title="Cart" icon="shopping-cart" href="/app-guide/basic/cart" />
+</CardGroup>
