@@ -1,0 +1,33 @@
+---
+title: "DeFindex"
+description: "What DeFindex is, and how it powers the yield behind Neko's vaults."
+icon: "vault"
+---
+
+## What DeFindex is
+
+**DeFindex** is the yield engine behind Neko's [vaults](/concepts/vaults). It's a piece of automated software, specifically a **smart contract**, code that runs on the blockchain itself instead of on a company's private servers, that takes deposits, puts them to work earning yield across different strategies, and hands back your share whenever you withdraw.
+
+Neko doesn't build this part itself, it plugs into DeFindex the same way a store might plug into a payment processor instead of building its own payment system from scratch. DeFindex is built by **PaltaLabs**, a team focused on making stablecoin yield accessible and safe, and it's used by other wallets and fintech apps beyond Neko, so the same tested infrastructure powers savings for more than one platform.
+
+## How it works
+
+When you deposit into a Neko [vault](/concepts/vaults), DeFindex routes that deposit into one or more underlying yield strategies, and can spread it across more than one source instead of betting on a single one, rebalancing automatically as conditions change. Your balance updates to reflect that yield continuously, no manual claiming needed for it to count.
+
+## Why Neko uses it instead of building its own
+
+- **Non-custodial.** Your funds never sit with DeFindex or Neko directly, they move straight between your wallet and the [vault](/concepts/vaults)'s smart contract. Neither company can freeze or move your money on your behalf.
+- **Audited.** The contracts were reviewed by an independent security firm (OtterSec) before handling real money. See the [audit report](https://github.com/paltalabs/defindex/blob/main/audits/2025_03_18_ottersec_defindex_audit.pdf).
+- **Diversified.** A [vault](/concepts/vaults) can spread deposits across more than one yield source instead of betting on a single strategy, and rebalances automatically as conditions change.
+- **Multi-asset.** [Vaults](/concepts/vaults) support stablecoins like USDC and EURC, along with other assets available on Stellar.
+
+## Where you'll see it
+
+Every [vault](/concepts/vaults) on Neko's [Vaults](/app-guide/basic/vault) page runs on DeFindex under the hood. Neko's interface, the cards, the Deposit/Withdraw panel, the earnings chart, is just the window into it, your deposit still goes straight into the underlying DeFindex [vault](/concepts/vaults) contract, not into a Neko-controlled account.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Vaults" icon="vault" href="/concepts/vaults" />
+  <Card title="APY" icon="percent" href="/concepts/apy" />
+</CardGroup>
