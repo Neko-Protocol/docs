@@ -1,39 +1,34 @@
 ---
 title: "Real-world assets"
-description: "Real-world investments explained: what they are, where the earnings come from, and how Neko handles compliance."
+description: "What a real-world asset is, in plain terms, where the return comes from, and why some need ID checks."
 icon: "building-columns"
 ---
 
 import { VideoPlaceholder } from "/snippets/video-placeholder.mdx";
 
-## What RWAs are
+## What a real-world asset is
 
-**Real-world assets (RWAs)** are tokens backed by off-chain income: government bills, rent, invoices, private loans, or similar cash flows with legal documentation.
+A real-world asset (RWA) is a digital version of a real investment, such as a stock, a government bond, or real estate. Think of it like a digital ownership certificate that you keep in your digital wallet instead of relying on paper documents or a bank to track it. Because it's digital, you can buy, sell, or transfer it quickly over the internet.
+That "something real" can be a few different things:
 
-Their prices tend to track cash flows and macro rates more than short-term social hype.
+- **Government Debt:** governments sometimes need to borrow money to pay for things like roads, schools, or public services. When you invest in government debt, you're lending money to the government. In return, it promises to pay you back later with a little extra. That extra amount is called interest, and it's how you earn money from your investment. On Neko, this investment is represented as a digital asset in your wallet, making it easy to own, transfer, and manage. CETES and USTRY are examples of government debt available on Neko.
+- **A physical item in a vault, like gold.** A company locks up real gold bars in a vault, then hands out one token for every ounce it's holding. The token is worth whatever that gold is worth at the time, and you could (at least in theory) trade it in for the real gold later.
+- **A share of a company, like a stock.** Normally you'd buy a company's stock through a broker, and it becomes more or less valuable as the company does better or worse. Tokenizing that stock just means it shows up as a token you can hold in your [wallet](/concepts/wallet) instead of in a brokerage account, while still tracking that same company's value.
+
+Gold and stock tokens aren't on Neko today, they're just other common examples of the idea. Check [Types of RWAs on Neko](/concepts/types-of-rwas) for what Neko actually offers right now.
+
 
 <VideoPlaceholder topic="What RWAs mean for everyday Neko investors" />
 
 {/* VIDEO_PLACEHOLDER: What RWAs mean for everyday Neko investors, 60–90s walkthrough */}
 
-## Where the yield comes from
+## Where the return comes from
 
-Yield comes from real payments (coupon income, rent, loan repayments), not only from trading volume.
+Not every real-world asset pays you a return, a token that just represents a real dollar in a bank, like USDC, is only meant to hold its value, not grow it. For the ones that do pay a return (like CETES or USTRY), that money is real money moving somewhere in the background: a government paying interest, or someone paying back a loan. Nobody has to buy or sell the token for you to earn this, it happens just from holding it.
 
-Issuers set **identity** rules, redemption timing, and freezes when law requires.
+## Related
 
-Disclosures live with the issuer and regulators as well as on-chain history.
-
-## How Neko handles compliance
-
-Issuer accounts can set **AUTH_REQUIRED_FLAG**, **AUTH_REVOCABLE_FLAG**, and sometimes **CLAWBACK_ENABLED_FLAG**:
-
-- **`AUTH_REQUIRED_FLAG`**: you finish issuer onboarding before new balances settle.
-- **`AUTH_REVOCABLE_FLAG`**: the issuer can revoke authorization for future moves under their terms.
-- **`CLAWBACK_ENABLED_FLAG`**: the issuer can recall tokens when their rules and law allow.
-
-Trustlines use **`AUTHORIZED_FLAG`**, **`AUTHORIZED_TO_MAINTAIN_LIABILITIES_FLAG`**, or **`UNAUTHORIZED_FLAG`** for whether you may hold or trade the asset.
-
-Many tokens follow **SEP-41** so wallets treat balances like standard tokens while issuer rules still apply.
-
-Neko reflects these flags in copy. Issuer legal docs hold the full terms.
+<CardGroup cols={2}>
+  <Card title="Types of RWAs on Neko" icon="layer-group" href="/concepts/types-of-rwas" />
+  <Card title="APY" icon="percent" href="/concepts/apy" />
+</CardGroup>
