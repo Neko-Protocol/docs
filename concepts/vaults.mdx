@@ -1,0 +1,40 @@
+---
+title: "Vaults"
+description: "What a vault is, how it earns yield through DeFindex, and why it's considered safe."
+icon: "vault"
+---
+
+## What a vault is
+
+A **vault** is the simplest way to earn on Neko: you deposit an asset, and it goes to work for you automatically. No trading, no picking a strategy, no active management, your balance just grows over time as the vault earns yield in the background, and withdrawing hands back your principal plus whatever it earned.
+
+Every vault on Neko runs on **[DeFindex](/tech-we-use/defindex)**, a piece of automated software, specifically a **smart contract**, code that runs on the blockchain itself instead of on a company's private servers, built by **PaltaLabs**. Neko doesn't build this part itself, it plugs into [DeFindex](/tech-we-use/defindex) the same way a store might plug into a payment processor instead of building its own payment system from scratch. The same infrastructure also powers savings inside other wallets and fintech apps beyond Neko, so it's tested well outside a single platform.
+
+## How a vault actually earns
+
+When you deposit, your money doesn't just sit there. [DeFindex](/tech-we-use/defindex) routes it into one or more underlying yield strategies, things like bond income, lending markets, or trading fees, depending on the vault, and can spread a single deposit across more than one of those sources instead of betting on just one, rebalancing automatically as conditions change. That diversification is part of what keeps a single bad strategy from wiping out your return.
+
+Your balance updates to reflect that yield continuously, so what you see in your [Vaults](/app-guide/basic/vault) tab already includes everything earned so far, you don't need to claim anything manually for it to count.
+
+## Why it's considered safe
+
+- **Non-custodial.** Your funds never sit with [DeFindex](/tech-we-use/defindex) or Neko directly, they move straight between your wallet and the vault's smart contract. Neither company can freeze or move your money on your behalf.
+- **Audited.** The contracts were reviewed by an independent security firm (OtterSec) before handling real money. See the [audit report](https://github.com/paltalabs/defindex/blob/main/audits/2025_03_18_ottersec_defindex_audit.pdf).
+- **Multi-asset.** Vaults support stablecoins like USDC and EURC, along with other assets available on Stellar, each vault discloses which one it takes.
+
+<Warning>Smart contract risk remains even with an audit. A vault's balance can also move down, not just up, if its underlying strategy loses value, treat every APY as an estimate, not a guarantee. See [APY](/concepts/apy).</Warning>
+
+## How a vault is different from a pool
+
+A vault takes a **single** asset and deploys it into a yield strategy for you, your balance moves in one direction relative to your deposit: up with accrued yield, down only if the underlying strategy loses value. A **pool** takes **two** assets so traders can swap against that shared liquidity, you earn trading fees, but the pool automatically rebalances the two tokens as prices move, so what you withdraw can differ from what you'd have if you'd simply held each token, that's **impermanent loss**, and it's a risk vaults don't have. See [Pools & lending](/app-guide/expert/pools-and-lending) for how the pool side works.
+
+## Where you'll see it
+
+Every vault on Neko's [Vaults](/app-guide/basic/vault) page runs on [DeFindex](/tech-we-use/defindex) under the hood. Neko's interface, the cards, the Deposit/Withdraw panel, the earnings chart, is just the window into it, your deposit still goes straight into the underlying [DeFindex](/tech-we-use/defindex) vault contract, not into a Neko-controlled account.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Vaults" icon="vault" href="/app-guide/basic/vault" />
+  <Card title="APY" icon="percent" href="/concepts/apy" />
+</CardGroup>
