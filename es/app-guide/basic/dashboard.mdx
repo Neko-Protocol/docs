@@ -1,0 +1,69 @@
+---
+title: "Dashboard"
+description: "Tu pantalla principal: qué posees, cuánto vale, tus posiciones abiertas, y acciones rápidas."
+icon: "gauge"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+Dashboard es la primera pantalla a la que llegas después de conectar tu wallet. Muestra qué posees, cuánto vale hoy, tus posiciones abiertas, y atajos hacia el resto de la app.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Recorrido por el Dashboard" />
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Estadísticas principales
+
+    Tres números resumen tu cuenta de un vistazo:
+
+    - **Valor Total del Portafolio**: el valor actual en USD de todo lo que posees, balances de wallet más depósitos en [vaults](/es/concepts/vaults), sumados.
+    - **Activos en Posesión**: cuántos activos diferentes tienes en este momento (por ejemplo, tener tanto XLM como EURC cuenta como 2).
+    - **APY Más Alto de Vault**: el mejor rendimiento anual disponible actualmente entre todos los [vaults](/es/concepts/vaults) de la plataforma, mostrado como porcentaje.
+
+    Estos usan precios en vivo, así que pueden variar un poco conforme se mueve el mercado, incluso si no has comprado ni vendido nada.
+
+    ## Tus Activos
+
+    Los activos que están en tu wallet, cada uno con su ícono, nombre, cantidad, y valor actual en USD (por ejemplo, tu balance de XLM o EURC). Un enlace de **Explorar activos** te lleva a [Discover](/es/app-guide/basic/discover) para encontrar más.
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-1.png" alt="Estadísticas principales del Dashboard y Tus Activos" />
+    </Frame>
+
+    ## Tus Posiciones
+
+    Una tabla de tus posiciones activas en [vaults](/es/concepts/vaults) y pools: qué vault o pool, qué activo, cuánto depositaste, cuánto has ganado hasta ahora, su valor actual, el APY, y un botón de **Reclamar** para cualquier ganancia lista para cobrar.
+
+    ## Acciones Rápidas
+
+    Tres atajos para entrar directo al protocolo:
+
+    - **Explorar Activos**: navega tokens de [RWA](/es/concepts/rwas) y precios en Discover.
+    - **Agregar Liquidez**: gana rendimiento en pools.
+    - **Tu Carrito**: revisa las compras pendientes que has puesto en cola. Ver [Carrito](/es/app-guide/basic/cart).
+
+    ## Pools Principales
+
+    Una tabla de los pools más activos entre los protocolos socios, con APY de Suministro y Liquidez Total para cada uno, y un enlace de **Ver todos los pools**.
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-2.png" alt="Tus Posiciones, Acciones Rápidas, y Pools Principales" />
+    </Frame>
+
+    ## Descubrir Activos
+
+    Una vista previa de algunos activos en los que puedes invertir (su precio spot actual y categoría, como Stablecoin o Bono Soberano), con un enlace de **Ver todos** hacia el catálogo completo de [Discover](/es/app-guide/basic/discover).
+
+    <Frame>
+      <img src="/images/dashboard/dashboard-3.png" alt="Vista previa de Descubrir Activos" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Discover" icon="compass" href="/es/app-guide/basic/discover" />
+  <Card title="Vaults" icon="vault" href="/es/app-guide/basic/vault" />
+</CardGroup>

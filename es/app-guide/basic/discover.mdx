@@ -1,0 +1,57 @@
+---
+title: "Discover"
+description: "Explora cada activo del mundo real disponible en Neko, filtra por categoría, y compra directamente desde el activo."
+icon: "compass"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+Discover es el catálogo de todos los activos disponibles en Neko: stablecoins, y activos nativos de la red, con su precio actual y datos de mercado.
+
+<Tabs>
+  <Tab title="Ver un video">
+    <VideoPlaceholder topic="Explorando activos en Discover" />
+  </Tab>
+  <Tab title="Leer la explicación">
+    ## Filtrar y buscar
+
+    Filtra el catálogo por categoría: **Todos**, **Stablecoins**, **Bonos Soberanos**, o **Nativo**, cada una con un conteo de cuántos activos contiene. O usa la barra de búsqueda para encontrar un activo por símbolo o nombre directamente. Ver [Tipos de RWAs en Neko](/es/concepts/types-of-rwas) para lo que hay en cada categoría.
+
+    ## Leer un activo
+
+    Cada activo muestra:
+
+    - **Ícono, ticker, y nombre**: por ejemplo CETES, Mexican Treasury Token.
+    - **Precio (USD)**: el precio actual.
+    - **APY**: se muestra junto al precio cuando el activo genera rendimiento (por ejemplo ~5.56% APY). Los activos que no generan rendimiento, como una stablecoin simple, no mostrarán uno.
+    - **Etiqueta de categoría**: Bono Soberano, Yield Stablecoin, Stablecoin, o Nativo.
+
+    <Frame>
+      <img src="/images/discover/discover-1.png" alt="Catálogo de Discover con filtros y tarjetas de activos" />
+    </Frame>
+
+    ## Comprar un activo
+
+    Cada tarjeta tiene dos botones, y llevan a dos flujos distintos:
+
+    - **Comprar Activo**: abre la página de detalle de ese activo, con su gráfico de precio, resumen, y un panel de compra donde pagas con **USDC**, ingresas un monto, y confirmas. ¿No sabes cómo conseguir USDC? Ver nuestro [tutorial](/es/tutorials/buy-usdc).
+
+    <Frame>
+      <img src="/images/discover/discover-2-buy-asset.png" alt="Página de detalle del activo abierta desde el botón Comprar Activo" />
+    </Frame>
+
+    - **Carrito de Compras**: abre un panel de compra rápida ahí mismo en Discover, sin necesidad de salir de la página. Paga con **USDC**, ingresa un monto, y toca **Agregar al carrito** para ponerlo en cola, y luego revisa todo junto más tarde en tu [Carrito](/es/app-guide/basic/cart). ¿No sabes cómo conseguir USDC? Ver nuestro [tutorial](/es/tutorials/buy-usdc).
+
+    <Frame>
+      <img src="/images/discover/discover-3-shopping.png" alt="Panel de agregado rápido abierto desde el botón Carrito de Compras" />
+    </Frame>
+
+    <Tip>Los rendimientos y precios cambian constantemente, y los emisores pueden actualizar los términos. Trata cada número como el estimado de hoy, no como una tasa fija.</Tip>
+  </Tab>
+</Tabs>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Activos del mundo real" icon="building-columns" href="/es/concepts/rwas" />
+</CardGroup>
