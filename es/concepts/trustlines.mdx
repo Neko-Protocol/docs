@@ -1,0 +1,40 @@
+---
+title: "Trustlines"
+description: "Qué es una trustline, por qué los activos de Stellar necesitan una, y cuándo Neko te pide agregarla."
+icon: "link"
+---
+
+## Qué es una trustline
+
+Neko corre sobre **Stellar**, y en Stellar tu wallet no acepta automáticamente cada activo que existe. Para cualquier cosa que no sea XLM (el activo nativo de la red), tienes que decirle explícitamente a tu wallet "estoy dispuesto a tener esto" antes de que pueda llegar ahí, eso es una **trustline**.
+
+Piénsalo como suscribirte a una nueva moneda en tu banco antes de que te dejen tenerla, sin una trustline para un activo, simplemente no puede llegar a tu wallet, incluso si alguien intenta enviártelo o intentas comprarlo.
+
+## Por qué existe
+
+Esto no es una regla de Neko, es cómo funciona la propia red de Stellar. Agregar una trustline aparta una pequeña cantidad de XLM en tu wallet como reserva de red. Esa reserva es estándar para cada wallet de Stellar, es lo que evita que la red se inunde de tokens basura que nadie quiere, y la recuperas si alguna vez eliminas la trustline.
+
+## Cuándo Neko te pide agregar una
+
+La primera vez que compras o recibes un activo que aún no tienes, tu wallet puede mostrar un paso de **Agregar Trustline** antes de dejarte confirmar la compra. Esto pasa una vez por activo, después de eso, comprar más del mismo activo no lo volverá a pedir.
+
+<Steps>
+  <Step title="Tu wallet te lo pide">
+    Junto a los detalles de la transacción, verás un enlace de **Agregar Trustline** si aún no tienes ese activo.
+  </Step>
+  <Step title="Apruébalo">
+    Tócalo y confirma en tu wallet, igual que cualquier otra aprobación.
+  </Step>
+  <Step title="Continúa la compra">
+    Una vez agregada la trustline, confirma la compra real como de costumbre.
+  </Step>
+</Steps>
+
+<Tip>Este es un paso único por activo, por wallet. Si ya has comprado o recibido un activo antes, no volverás a ver esto para ese mismo activo.</Tip>
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Wallet" icon="wallet" href="/es/concepts/wallet" />
+  <Card title="Carrito" icon="shopping-cart" href="/es/app-guide/basic/cart" />
+</CardGroup>

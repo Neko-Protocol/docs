@@ -1,0 +1,40 @@
+---
+title: "Vaults"
+description: "Qué es un vault, cómo genera rendimiento a través de DeFindex, y por qué se considera seguro."
+icon: "vault"
+---
+
+## Qué es un vault
+
+Un **vault** es la forma más simple de ganar en Neko: depositas un activo, y se pone a trabajar para ti automáticamente. Sin trading, sin elegir una estrategia, sin gestión activa, tu balance simplemente crece con el tiempo mientras el vault genera rendimiento en segundo plano, y al retirar recibes de vuelta tu principal más lo que haya ganado.
+
+Cada vault en Neko corre sobre **[DeFindex](/es/tech-we-use/defindex)**, un software automatizado, específicamente un **smart contract**, código que corre en la blockchain misma en lugar de en los servidores privados de una empresa, construido por **PaltaLabs**. Neko no construye esta parte por sí mismo, se conecta a [DeFindex](/es/tech-we-use/defindex) de la misma forma que una tienda podría conectarse a un procesador de pagos en lugar de construir su propio sistema de pagos desde cero. La misma infraestructura también impulsa el ahorro dentro de otras wallets y apps fintech más allá de Neko, así que está probada bien fuera de una sola plataforma.
+
+## Cómo gana realmente un vault
+
+Cuando depositas, tu dinero no se queda ahí sin más. [DeFindex](/es/tech-we-use/defindex) lo enruta hacia una o más estrategias de rendimiento subyacentes, cosas como ingresos de bonos, mercados de préstamo, o comisiones de trading, dependiendo del vault, y puede distribuir un solo depósito entre más de una de esas fuentes en lugar de apostar por una sola, reequilibrando automáticamente conforme cambian las condiciones. Esa diversificación es parte de lo que evita que una sola mala estrategia arruine tu rendimiento.
+
+Tu balance se actualiza para reflejar ese rendimiento continuamente, así que lo que ves en tu pestaña de [Vaults](/es/app-guide/basic/vault) ya incluye todo lo ganado hasta ahora, no necesitas reclamar nada manualmente para que cuente.
+
+## Por qué se considera seguro
+
+- **No custodial.** Tus fondos nunca están en manos de [DeFindex](/es/tech-we-use/defindex) o Neko directamente, se mueven directamente entre tu wallet y el smart contract del vault. Ninguna de las dos empresas puede congelar o mover tu dinero en tu nombre.
+- **Auditado.** Los contratos fueron revisados por una firma de seguridad independiente (OtterSec) antes de manejar dinero real. Ver el [reporte de auditoría](https://github.com/paltalabs/defindex/blob/main/audits/2025_03_18_ottersec_defindex_audit.pdf).
+- **Multi-activo.** Los vaults soportan stablecoins como USDC y EURC, junto con otros activos disponibles en Stellar, cada vault revela cuál acepta.
+
+<Warning>El riesgo de smart contract permanece incluso con una auditoría. El balance de un vault también puede bajar, no solo subir, si su estrategia subyacente pierde valor, trata cada APY como un estimado, no una garantía. Ver [APY](/es/concepts/apy).</Warning>
+
+## En qué se diferencia un vault de un pool
+
+Un vault toma un **único** activo y lo despliega en una estrategia de rendimiento para ti, tu balance se mueve en una sola dirección relativa a tu depósito: sube con el rendimiento acumulado, baja solo si la estrategia subyacente pierde valor. Un **pool** toma **dos** activos para que los traders puedan intercambiar contra esa liquidez compartida, ganas comisiones de trading, pero el pool reequilibra automáticamente los dos tokens conforme se mueven los precios, así que lo que retiras puede diferir de lo que tendrías si simplemente hubieras tenido cada token, eso es **pérdida impermanente**, y es un riesgo que los vaults no tienen. Ver [Pools & lending](/es/app-guide/expert/pools-and-lending) para saber cómo funciona el lado de los pools.
+
+## Dónde lo verás
+
+Cada vault en la página de [Vaults](/es/app-guide/basic/vault) de Neko corre sobre [DeFindex](/es/tech-we-use/defindex) por debajo. La interfaz de Neko, las tarjetas, el panel de Depositar/Retirar, el gráfico de ganancias, es solo la ventana hacia eso, tu depósito va directo al contrato de vault de [DeFindex](/es/tech-we-use/defindex) subyacente, no a una cuenta controlada por Neko.
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Vaults" icon="vault" href="/es/app-guide/basic/vault" />
+  <Card title="APY" icon="percent" href="/es/concepts/apy" />
+</CardGroup>

@@ -1,0 +1,38 @@
+---
+title: "APY"
+description: "Qué significa el APY en Neko, de dónde viene el rendimiento, y por qué se mueve."
+icon: "percent"
+---
+
+import { VideoPlaceholder } from "/snippets/video-placeholder-es.mdx";
+
+## Qué es el APY
+
+**APY** significa **Annual Percentage Yield** (rendimiento porcentual anual). En términos simples, responde una pregunta: "si dejo mi dinero aquí durante un año, ¿aproximadamente cuánto extra terminaría teniendo?" Un 5% de APY significa que \$100 guardados durante un año crecerían a aproximadamente \$105, asumiendo que la tasa que ves hoy se mantenga igual todo ese tiempo.
+
+Es un estimado basado en las condiciones actuales, no una promesa fija, la tasa real puede subir o bajar conforme cambian los mercados, por eso a veces verás el número moverse aunque no hayas hecho nada.
+
+La mayoría de los productos en Neko usan una tasa **flotante** ligada a cupones de bonos, demanda de prestatarios, o comisiones de trading de pools, a menos que algo se anuncie explícitamente como fijo.
+
+## De dónde viene el número
+
+- **[Vaults](/es/concepts/vaults).** Ingresos de la estrategia subyacente: cupones de bonos, spreads de crédito, o (para estrategias respaldadas por pools) comisiones de trading. Ver [Vaults](/es/app-guide/basic/vault).
+- **Pools de liquidez.** Comisiones de trading, netas de **pérdida impermanente** (la desviación que ocurre cuando los dos balances de token de un pool se reequilibran conforme los precios se separan). El APY de pools mezcla comisiones con ese riesgo, así que un número alto no es dinero gratis. Ver [Pools & lending](/es/app-guide/expert/pools-and-lending).
+- **Mercados de préstamo** (una vez que Blend salga). Una tasa que se mueve con la utilización del pool, cuánto del pool está actualmente prestado.
+
+## Cómo lo muestra Neko
+
+Las tarjetas de Discover y las páginas de [vault](/es/concepts/vaults) etiquetan el APY con una marca de tiempo. Un dato reciente importa más cuando el mercado se mueve rápido, un APY de hace una hora en un mercado veloz puede ya estar desactualizado.
+
+<Tip>Si estás pidiendo prestado contra una posición, compara el costo del préstamo con el APY de ganancia de lo que tienes, esa diferencia es tu ingreso neto real, no el número principal por sí solo.</Tip>
+
+<VideoPlaceholder topic="Leyendo el APY en Discover y páginas de vault" />
+
+{/* VIDEO_PLACEHOLDER: Leyendo el APY en Discover y páginas de vault, walkthrough de 60s */}
+
+## Relacionado
+
+<CardGroup cols={2}>
+  <Card title="Tipos de RWAs en Neko" icon="layer-group" href="/es/concepts/types-of-rwas" />
+  <Card title="Vaults" icon="vault" href="/es/concepts/vaults" />
+</CardGroup>
