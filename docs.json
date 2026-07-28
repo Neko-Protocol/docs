@@ -9,93 +9,143 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "User Guide",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "get-started/what-is-neko",
-              "get-started/choose-your-mode",
-              "get-started/wallet-setup"
-            ]
-          },
-          {
-            "group": "Tutorials",
-            "pages": [
-              "tutorials/install-a-wallet",
-              "tutorials/install-freighter",
-              "tutorials/install-lobstr",
-              "tutorials/buy-usdc"
-            ]
-          },
-          {
-            "group": "Basic Mode",
-            "pages": [
-              "basic/dashboard",
-              "basic/discover",
-              "basic/buying-assets",
-              "basic/cart"
-            ]
-          },
-          {
-            "group": "Expert Mode",
-            "pages": [
-              "expert/dashboard",
-              "expert/discover",
-              "expert/swap"
-            ]
-          },
-          {
-            "group": "Features",
-            "pages": [
-              "features/vaults",
-              "features/lending",
-              "features/borrowing",
-              "features/pools",
-              "features/strategies",
-              "features/simulator",
-              "features/ramps",
-              "features/settings"
-            ]
-          },
-          {
-            "group": "Concepts",
-            "pages": [
-              "concepts/rwas",
-              "concepts/yield-and-apy",
-              "concepts/collateral-and-health-factor",
-              "concepts/oracles",
-              "concepts/multichain"
-            ]
-          },
-          {
-            "group": "Help",
-            "pages": [
-              "troubleshooting",
-              "support"
+            "tab": "User Guide",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "index"
+                ]
+              },
+              {
+                "group": "App Guide",
+                "pages": [
+                  {
+                    "group": "Basic Mode",
+                    "pages": [
+                      "app-guide/basic/dashboard",
+                      "app-guide/basic/discover",
+                      "app-guide/basic/cart",
+                      "app-guide/basic/vault",
+                      "app-guide/basic/settings"
+                    ]
+                  },
+                  {
+                    "group": "Expert Mode",
+                    "pages": [
+                      "app-guide/expert/dashboard",
+                      "app-guide/expert/discover",
+                      "app-guide/expert/vault",
+                      "app-guide/expert/swap",
+                      "app-guide/expert/settings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Important Concepts",
+                "pages": [
+                  "concepts/wallet",
+                  "concepts/trustlines",
+                  "concepts/rwas",
+                  "concepts/types-of-rwas",
+                  "concepts/apy",
+                  "concepts/vaults"
+                ]
+              },
+              {
+                "group": "Tech we use",
+                "pages": [
+                  "tech-we-use/defindex"
+                ]
+              },
+              {
+                "group": "Tutorials",
+                "pages": [
+                  "tutorials/install-a-wallet",
+                  "tutorials/buy-usdc"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Upcoming",
-        "groups": [
+        "language": "es",
+        "tabs": [
           {
-            "group": "Roadmap",
-            "pages": [
-              "upcoming/overview",
-              "upcoming/issuers-portal",
-              "upcoming/zk-privacy",
-              "upcoming/referrals",
-              "upcoming/governance",
-              "upcoming/mobile-app"
+            "tab": "Guía de usuario",
+            "groups": [
+              {
+                "group": "Comenzar",
+                "pages": [
+                  "es/index"
+                ]
+              },
+              {
+                "group": "Guía de la app",
+                "pages": [
+                  {
+                    "group": "Modo Básico",
+                    "pages": [
+                      "es/app-guide/basic/dashboard",
+                      "es/app-guide/basic/discover",
+                      "es/app-guide/basic/cart",
+                      "es/app-guide/basic/vault",
+                      "es/app-guide/basic/settings"
+                    ]
+                  },
+                  {
+                    "group": "Modo Experto",
+                    "pages": [
+                      "es/app-guide/expert/dashboard",
+                      "es/app-guide/expert/discover",
+                      "es/app-guide/expert/vault",
+                      "es/app-guide/expert/swap",
+                      "es/app-guide/expert/settings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Conceptos importantes",
+                "pages": [
+                  "es/concepts/wallet",
+                  "es/concepts/trustlines",
+                  "es/concepts/rwas",
+                  "es/concepts/types-of-rwas",
+                  "es/concepts/apy",
+                  "es/concepts/vaults"
+                ]
+              },
+              {
+                "group": "Tecnología que usamos",
+                "pages": [
+                  "es/tech-we-use/defindex"
+                ]
+              },
+              {
+                "group": "Tutoriales",
+                "pages": [
+                  "es/tutorials/install-a-wallet",
+                  "es/tutorials/buy-usdc"
+                ]
+              }
             ]
           }
-        ]
+        ],
+        "navbar": {
+          "primary": {
+            "type": "button",
+            "label": "Abrir App",
+            "href": "https://nekoprotocol.xyz"
+          }
+        }
       }
     ]
   },
@@ -104,29 +154,11 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "GitHub",
-        "href": "https://github.com/Neko-Protocol/Neko-DApp"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Open App",
       "href": "https://nekoprotocol.xyz"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
